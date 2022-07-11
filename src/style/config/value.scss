@@ -1,0 +1,214 @@
+@import "./config.scss";
+
+.value{
+   margin-top: 150px;
+   background-image: url("/src/img/Rectangle\ 22.png");
+   background-size: cover;
+   background-position: center;
+   padding-bottom: 99px;
+   background-repeat: no-repeat;
+   .value__block{
+      margin: $margin-blok-all;
+      max-width: $width-blok-all ;
+      width: 89.6%;
+   .value__title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 47px;
+      padding-top: 94px;
+      margin-bottom: 100px;
+   }
+   .value__blok {
+      padding-left: 10%;
+      padding-right: 10%;
+      border-radius: 15px;
+      padding-bottom: 167px;
+      text-align: center;
+      background-color: $color-one;
+      border-radius: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .value__blok-form {
+         max-width: 500px;
+         width: 100%;
+         margin-top: 156px;
+         text-align: start;
+         .container-more {
+            width: 450px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            input[type=range] {
+               width: 250px;
+               margin-left: 20px;
+               margin-right: 20px;
+               //-webkit-appearance: none !important;
+               background:$color-two;
+               height:10px;
+            }
+            button {
+               position: relative;
+               width: 40px;
+               height: 40px;
+               background: white;
+               font-size: 33px;
+               border: 1px solid lightgrey;
+               cursor: pointer;
+               color: $color-one;
+               border-radius: 5px;
+               background: $color-seven;
+            }
+         #output {
+            position: absolute;
+            top: -20px;
+            left: 210px;
+            color: $color-two;
+            font-weight: bold;
+         }
+         }
+         .container-more-text {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 100px;
+            width: 260px;
+            color: $color-four;
+         }
+         .value__blok-form__text {
+            display: block;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            font-family: $font-one;
+            color: $color-four;
+            margin-bottom: 30px;
+         }
+         .value__blok-form__calc {
+            border-radius: 5px;
+            margin-bottom: 62px; 
+            width: 400px;
+            height: 56px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            font-family: $font-one;
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+      }
+      .value__blok-calc {
+         border-radius: 15px;
+         margin-top: 168px;
+         background-color: $color-four;
+         max-width: 840px;
+         width: 100%;
+         text-align: center;
+         .value__blok-calc__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            margin-top: 57px;
+            padding-bottom: 47px;
+            border-bottom: 3px dashed #000000;
+         }
+         .value__blok-calc__sum {
+            margin-top: 54px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            margin-bottom: 37px;
+         }
+         .value__blok-calc__btn {
+            width: 297px;
+            height: 64px;
+            margin-bottom: 32px;
+         }
+         .value__blok-calc__text {
+            max-width: 461px;
+            width: 100%;
+            margin-bottom: 58px;
+
+         }
+      }
+   }
+}
+
+}
+
+@media (max-width: 1280px) {
+   .value{
+      margin-top: 45px;
+      padding-bottom: 66px;
+      .value__block{
+         margin-left: $margin-blok-one;
+         margin-right: $margin-blok-one;
+         max-width: $width-blok-one ;
+         width: 89.6%;
+      .value__title {
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 28px;
+         padding-top: 47px;
+         margin-bottom: 45px;
+      }
+      .value__blok {
+         padding-bottom: 61px;
+         .value__blok-form {
+            max-width: 917px;
+            width: 100%;
+            margin-top: 51px;
+            text-align: center;
+            .value__blok-form__all{
+               display: flex;
+               justify-content: space-around;
+               text-align: center;
+               flex-wrap: wrap;
+               .value__blok-form__all-bloks{
+                  width: 300px;
+               }
+            }
+            .container-more {
+               margin-left: 20%;
+
+            }
+            .container-more-text {
+               width: 260px;
+               margin-left: 33%;
+            }
+            .value__blok-form__calc {
+               width: 280px;
+               height: 56px;
+            }
+         }
+         .value__blok-calc {
+            text-align: center;
+            margin-top: 20px;
+            .value__blok-calc__title {
+               font-weight: 700;
+               font-size: 25px;
+               line-height: 29px;
+               margin-top: 40px;
+               padding-bottom: 32px;
+            }
+            .value__blok-calc__text {
+               text-align: center;
+               width: 496px;
+               margin-bottom: 58px;
+               font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+margin-left: 15%;
+   
+            }
+         }
+      }
+      }
+   }
+
+
+}

@@ -1,0 +1,111 @@
+$font-one: "Roboto", sans-serif;
+$color-one: #164288;
+$color-two: #F7C661;
+$color-three: #000000;
+$color-four: #FFFFFF;
+$color-five: #8298C0;
+$color-six: #A1B5DB;
+$color-seven: #E6EFFD;
+$colot-eight: #E5E5E5;
+$color-ten: #EEF4FE;
+$width-blok-all: 1920px;
+$padding-blok-all: 100px;
+$margin-blok-all: 0 auto;
+$width-blok-mini: 1720px;
+$width-blok-one: 1280px;
+$margin-blok-one: 7%;
+$margin-blok-two: 2%;
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0 auto;
+   font-family: $font-one;
+   font-style: normal;
+}
+
+h2 {
+   font-family: $font-one;
+   font-weight: 700;
+   line-height: 59px;
+
+}
+
+h3 {
+   font-family: $font-one;
+   font-weight: 700;
+   line-height: 29px;
+}
+
+.text-yellow {
+   color: $color-two;
+}
+
+.text-blue {
+   color: $color-one;
+}
+
+
+.btn-1 {
+   background-color: $color-two;
+   color: $color-three;
+   box-shadow: 0px 4px 0px #E9B145;
+   border: none;
+   font-family: $font-one;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   &:hover {
+      background:darken($color-two,10%);
+      transition: all 0.3s ease;
+   }
+   &:active {
+      background:darken($color-two,25%);
+   } 
+}
+
+.btn-2 {
+   background-color: $color-two;
+   color: $color-four;
+   box-shadow: 0px 4px 0px #E9B145;
+   border: none;
+   font-family: $font-one;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   &:hover {
+      background:darken($color-two,10%);
+      transition: all 0.3s ease;
+   }
+   &:active {
+      background:darken($color-two,25%);
+   } 
+}
+.btn-3 {
+   background-color: $color-six;
+   color: $color-four;
+   box-shadow: 0px 4px 0px #8298C0;
+   border: none;
+   font-family: $font-one;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 23px;
+   &:hover {
+      background:darken($color-six,10%);
+      transition: all 0.3s ease;
+   }
+   &:active {
+      background:darken($color-six,25%);
+   } 
+}

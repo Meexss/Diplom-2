@@ -1,0 +1,137 @@
+@import "./config.scss";
+
+
+.first{
+   margin: $margin-blok-all;
+   max-width: $width-blok-all ;
+   width: 89.6%;
+   .first__blok-all{
+   text-align: start;
+   width: 80%;
+   margin-top: 200px;
+   margin-bottom: 200px;
+   margin-left: 10%;
+   display: flex;
+   justify-content: space-between;
+   .first__info {
+      width: 833px;
+      margin-right: 32px;
+      .first__info-title {
+         color: $color-one;
+         font-size: 45px;
+         margin-top: 5px;
+      }
+      .first__info-text {
+         margin-top: 39px;
+         font-weight: 400;
+         font-size: 30px;
+         line-height: 35px;
+      }
+      .first__info-btn {
+         margin-top: 62px;
+         width: 413px;
+         height: 81px;
+      }
+      .first__info-sup {
+         margin-top: 115px;
+         display: block;
+         font-weight: 700;
+         font-size: 35px;
+         line-height: 41px;
+      }
+      .first__info-contact {
+         margin-top: 51px;
+         font-weight: 300;
+         font-size: 25px;
+         line-height: 29px;
+         display: flex;
+         flex-wrap: wrap;
+         .first__info-contact__tel {
+            text-decoration: none;
+            color: $color-three;
+            &::before {
+               margin-right: 15px;
+               content: url("/src/img/phone-call\ 1.png");
+               position: relative;
+               top: 10px;
+            }
+         }
+         .first__info-contact__mail {
+            margin-left: 44px;
+            color: $color-three;
+         }
+      }
+   }
+   .container-photo{
+      width: 570px;
+      height: 641px;
+   }
+}
+}
+
+@media (max-width: 1280px) {
+   .first{
+      margin-left: 12%;
+      margin-right: $margin-blok-one;
+      max-width: $width-blok-one ;
+      width: 80%;
+      .first__blok-all{
+      width: 100%;
+      height: 620px;
+      margin-top: 48px;
+      margin-bottom: 62px;
+      margin-left: 0;
+      .first__info {
+         width: 833px;
+         margin-right: 32px;
+         .first__info-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            margin-top: 5px;
+         }
+         .first__info-text {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+         }
+         .first__info-btn {
+            margin-top: 32px;
+            width: 262px;
+            height: 65px;
+         }
+         .first__info-sup {
+            margin-top: 32px;
+            display: block;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+         }
+         .first__info-contact {
+            margin-top: 22px;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 29px;
+            display: flex;
+            flex-wrap: wrap;
+            .first__info-contact__tel {
+               width: 280px;
+            }
+            .first__info-contact__mail {
+               width: 280px;
+               margin-top: 24px;
+               margin-left: 0;
+            }
+         }
+      }
+      .container-photo img{
+         width: 455px;
+         height: 512px;
+         }
+      }
+      
+   }
+   }
+

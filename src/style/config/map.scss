@@ -1,0 +1,55 @@
+@import "./config.scss";
+
+.map{
+   margin: $margin-blok-all;
+   max-width: $width-blok-all ;
+   width: 89.6%;
+   text-align: center;
+   .map__text{
+      margin-top: 100px;
+      display: block;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      font-family: $font-one;
+   }
+   .map_title {
+      font-family: $font-one;
+      margin-top: 200px;
+      font-size: 40px;
+   }
+   .map_navigation {
+      //max-width: 1717px; 
+      //max-height: 502px;
+      width: 100%;
+      height: 100%;
+      margin-top: 90px;
+      margin-bottom: 200px;
+   }
+}
+
+
+@media (max-width: 1280px) {
+
+   .map {
+   .map__text{
+      
+      margin-top: 68px;
+   }
+   .map_title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      margin-top: 66px;
+   }
+   .map_navigation {
+      margin: 0 auto;
+      width: 50%;
+      height: 50%;
+      margin-top: 46px;
+      margin-bottom: 97px;
+   }
+}
+
+}

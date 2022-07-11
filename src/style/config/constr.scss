@@ -1,0 +1,184 @@
+@import "./config.scss";
+.constr {
+   margin: $margin-blok-all;
+   max-width: $width-blok-all ;
+   width: 89.6%;
+}
+
+.consr__info{
+   margin-top: 50px;
+   width: 80%;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+   position: relative;
+}
+
+.read-more-state {
+   display: none;
+}
+
+.read-more-target {
+   opacity: 0;
+   max-height: 0;
+   font-size: 0;
+   transition: .25s ease;
+}
+.read-more-state:checked ~ .consr__info .read-more-target {
+   opacity: 1;
+   font-size: 24px;
+   max-height: 999px;
+}
+.read-more-state ~ .read-more-trigger::before {
+   content: 'читать дальше';
+   
+
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+   content: 'скрыть';
+}
+
+.read-more-trigger {
+   cursor: pointer;
+   display: inline;
+   color: $color-two;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.constr__bloks{
+   margin-top: 105px;
+   margin-bottom: 200px;
+   display: flex;
+   justify-content: space-between;
+   .constr__bloks-all{
+      width: 32%;
+      background-color: $color-seven;
+      border-radius: 15px;
+      text-align: center;
+      .constr__bloks-all__img{ 
+         width: 100%;
+      }
+      .constr__bloks-all__title {
+         font-size: 25px;
+         margin-left: 40px;
+         margin-top: 45px;
+         text-align: start;
+      }
+      .constr__bloks-all__text {
+         text-align: start;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 25px;
+            margin-left: 40px;
+      }
+      .constr__bloks-all__info {
+         text-align: start;
+         display: block;
+         margin-top: 25px;
+         margin-left: 40px;
+         font-style: normal;
+         font-size: 18px;
+         line-height: 21px;
+      }
+      .constr__bloks-all__list {
+         text-align: start;
+         .constr__bloks-all__list-type {
+            margin-left: 40px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 25px;
+         }
+      }
+      .constr__bloks-all__price {
+         margin-left: 40px;
+         text-align: start;
+         margin-top: 45px;
+         display: block;
+         font-weight: 400;
+         font-size: 25px;
+         line-height: 29px;
+      }
+      .constr__bloks-all__btn {
+         width: 215px;
+         height: 62px;
+         margin-top: 53px;
+         margin-bottom: 45px;
+      }
+      .more {
+         margin-top: 32px;
+      }
+   }
+
+}
+
+@media (max-width: 1280px) {
+   .constr {
+      margin-left: $margin-blok-two;
+      margin-right: $margin-blok-two;
+      max-width: $width-blok-one ;
+      width: 96%;
+      .consr__info{
+         margin-left: $margin-blok-one;
+         margin-top: 88px;
+         width: 80%;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+      }
+      .read-more-trigger {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+      }
+      .read-more-trigger:before {
+         margin-left: $margin-blok-one;
+      }
+      .read-more-state:checked ~ .consr__info .read-more-target {
+         font-size: 18px;
+      }
+      }
+      .constr__bloks{
+         margin-top: 32px;
+         margin-bottom: 47px;
+      }
+      .constr__bloks .constr__bloks-all .constr__bloks-all__text {
+         width: 246px;
+         text-align: center;
+         margin-left: 12%;
+      }
+      .constr__bloks .constr__bloks-all .constr__bloks-all__list .constr__bloks-all__list-type {
+         margin-left: 15%;
+      }
+      .constr__bloks-all__price {
+         margin-bottom: 0;
+         padding-bottom: 20px;
+      }
+      .one-blok-all {
+         order: 1;
+         height: 950px;
+      }
+      .two-blok-all {
+         order: 3;
+         height: 1051px;
+      }
+      .three-blok-all {
+         order: 2;
+         height: 1020px;
+      }
+      .constr__bloks .constr__bloks-all {
+         position: relative;
+      }
+      .constr__bloks .constr__bloks-all .constr__bloks-all__btn {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         margin-top: 0;
+         margin-bottom: 0;
+      }
+   }

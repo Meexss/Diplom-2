@@ -1,0 +1,203 @@
+@import "./config.scss";
+
+.benefit {
+   margin: $margin-blok-all;
+   max-width: $width-blok-all ;
+   width: 89.6%;
+   margin-top: 200px;
+   text-align: center;
+
+   .benefit__title {
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 59px;
+   }
+   .benefit__blok {
+      margin-top: 240px;
+      display: flex;
+      justify-content: space-between;
+      .benefit__blok-info {
+         width: 100%;
+         max-width: 546px;
+         max-height: 369px;
+         height: 100%;
+         margin-left: 10px;
+         position: relative;
+         & :first-child {
+            margin-left: 0;
+         }
+         .benefit__blok-info__photo{
+            position: absolute;
+            width: 50%;
+            height: 70%;
+            border-radius: 15px;
+            background-color: $color-two;
+            top:-40%;
+            left: 25%;
+            .benefit__blok-info__img {
+               margin-top: 34px;
+         }
+            .correct {
+               margin-top: 29px;
+         }
+            }
+      }
+      .benefit__blok-info__secondary {
+            background-color: $colot-eight;
+            border-top: 5px solid #E9B145;
+            border-radius: 0px 0px 15px 15px;
+            .benefit__blok-info__secondary-title{
+               font-weight: 700;
+               font-size: 32px;
+               line-height: 38px;
+               margin-top: 99px;
+            }
+            .benefit__blok-info__secondary-text {
+               display: block;
+               font-weight: 400;
+               font-size: 24px;
+               line-height: 28px;
+               margin-top: 15px;
+               padding-bottom: 50px;
+            }
+         }
+      }
+      .benefit__list-blok {
+         margin-top: 200px;
+         width: 80%;
+         text-align: start;
+         margin-left: 150px;
+         font-weight: 400;
+         font-size: 24px;
+         line-height: 30px;
+         .benefit__list-blok__text {
+            margin-bottom: 40px;
+         }
+         .benefit__list-blok__list {
+            margin-left: 35px;
+         }
+      }
+   }
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: 24px;
+  max-height: 999px;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'читать больше';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'скрыть';
+}
+
+.read-more-trigger {
+   cursor: pointer;
+   display: inline;
+   color: $color-two;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+}
+
+@media (max-width: 1280px) {
+   .benefit {
+      margin-left: $margin-blok-two;
+      margin-right: $margin-blok-two;
+      max-width: $width-blok-one ;
+      width: 96%;
+      margin-top: 76px;
+      .benefit__title {
+font-size: 24px;
+line-height: 28px;
+      }
+      .benefit__blok {
+         margin-top: 200px;
+         .benefit__blok-info {
+            width: 100%;
+            max-width: 546px;
+            max-height: 369px;
+            height: 100%;
+            margin-left: 10px;
+            position: relative;
+            & :first-child {
+               margin-left: 0;
+            }
+            .benefit__blok-info__photo{
+               position: absolute;
+               width: 150px;
+               height: 176px;
+               border-radius: 15px;
+               background-color: $color-two;
+               top:-30%;
+               left: 30%;
+               .benefit__blok-info__img {
+                  margin-top: 50px;
+                  width: 76px;
+                  height: 75px;
+            }
+               .correct {
+                  margin-top: 50px;
+            }
+               }
+         }
+         .benefit__blok-info__secondary {
+            .benefit__blok-info__secondary-title{
+               font-weight: 700;
+               font-size: 24px;
+               line-height: 28px;
+               margin-top: 109px;
+            }
+            .benefit__blok-info__secondary-text {
+               font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+               margin-top: 27px;
+               padding-bottom: 42px;
+            }
+         }
+         
+      }
+      .benefit__list-blok {
+         margin-top: 36px;
+         width: 80%;
+         margin-left: 12%;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+         .benefit__list-blok__text {
+            margin-bottom: 40px;
+         }
+         .benefit__list-blok__list {
+            margin-left: 35px;
+         }
+         
+      }
+   }
+   .read-more-state:checked ~ .read-more-target {
+      font-size: 18px;
+   }
+   .read-more-state ~ .read-more-trigger:before {
+      font-size: 18px;
+    }
+    
+    .read-more-state:checked ~ .read-more-trigger:before {
+      font-size: 18px;
+    }
+
+}
+

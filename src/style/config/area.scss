@@ -1,0 +1,100 @@
+@import "./config.scss";
+
+.area__blok-color{
+   background-color: $color-one;
+   .area__blok-size {
+      margin: $margin-blok-all;
+      max-width: $width-blok-all ;
+      width: 89.6%;
+   }
+}
+
+.area__info{
+   text-align: center;
+   
+   color: $color-four;
+   .aria__info-title {
+      padding-top: 97px;
+      font-size: 40px;
+   }
+   .aria__info-list__flex {
+      display: flex;
+      text-align: start;
+      justify-content: space-between;
+      .aria__info-list {
+         list-style: none;
+         margin-top: 50px;
+         margin-bottom: 88px;
+         .aria__infp-list__info {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 60px;
+            font-family: $font-one;
+         }
+         
+      }
+   }
+
+}
+.area__blok-text__size{
+   margin: $margin-blok-all;
+   max-width: $width-blok-all ;
+   width: 89.6%;
+.area__text-blok {
+   margin-top: 100px;
+   margin-left: 10%;
+   width: 80%x;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+   font-family: $font-one;
+}
+}
+
+@media (max-width: 1280px) {
+   .area__info{
+      .aria__info-title {
+         padding-top: 32px;
+         width: 254px;
+         font-weight: 700;
+         font-size: 25px;
+         line-height: 29px;
+         margin: 0 auto;
+      }
+      .aria__info-list__flex {
+         display: flex;
+         text-align: start;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         .aria__info-list {
+            list-style: none;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            .aria__infp-list__info {
+               //width: 270px;
+               font-weight: 400;
+               font-size: 18px;
+               line-height: 30px;
+            }
+            
+         }
+      }
+   
+   }
+   .area__blok-text__size{
+      margin-left: $margin-blok-two;
+      margin-right: $margin-blok-two;
+      max-width: $width-blok-one ;
+      width: 90%;
+   .area__text-blok {
+      margin-top: 45px;
+      width: 80%x;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+   }
+   }
+
+}

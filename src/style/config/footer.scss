@@ -1,0 +1,182 @@
+@import "./config.scss";
+
+
+footer{
+   background-color: $color-ten;
+   padding-top: 52px;
+   .footer__blok{
+      margin: $margin-blok-all;
+      max-width: $width-blok-all ;
+      width: 89.6%;
+   .info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 105px;
+      border-bottom: 1px solid #ACACAC;
+      .info__contact{
+         margin-top: 52px;
+         width: 384px;
+         .info__contact-img {
+            display: block;
+            width: 381px;
+            height: 130px;
+         }
+         .info__contact-tel {
+            display: block;
+            margin-top: 52px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: $font-one;
+            color: $color-one;
+            text-decoration: none;
+         }
+         .info__contact-text {
+            
+            display: block;
+            margin-top: 23px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+            font-family: $font-one;
+         }
+         .info__contact-mail {
+            margin-top: 41px;
+            display: block;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: $font-one;
+            color: $color-one;
+            text-decoration: none;
+         }
+      }
+   .info__colum{
+      margin-top: 52px;
+      margin-left: 10px;
+      width: 384px;
+   .info__colum-title{
+      display: block;
+      font-family: $font-one;
+      color: $color-one;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 35px;
+   }
+      .info__colum-list {
+         margin-top: 37px;
+         list-style-type: none;
+         font-style: normal;
+         font-family: $font-one;
+         font-weight: 400;
+         font-size: 23px;
+         line-height: 27px;
+         text-decoration: none;
+         .info__colum-list__link{
+            text-decoration: none;
+            color: $color-three;
+         }
+         .info__colum-list__type {
+            margin-top: 20px;
+            
+         }
+      }
+   }
+
+   }
+.under {
+   margin-top: 41px;
+   padding-bottom: 45px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 23px;
+   font-family: $font-one;
+   .under__info {
+      margin-right: 148px;
+   }
+   .under__link {
+      text-decoration: none;
+   }
+}
+}
+}
+
+@media (max-width: 1280px) {
+
+   
+   footer{
+      padding-top: 0;
+      .footer__blok{
+         margin-left: $margin-blok-one;
+   margin-right: $margin-blok-one;
+   max-width: $width-blok-one ;
+   width: 89.6%;
+      .info {
+         padding-bottom: 32px;
+         .info__contact{
+            margin-top: 32px;
+            width: 310px;
+            .info__contact-img {
+               width: 310px;
+               height: 106px;
+            }
+            .info__contact-tel {
+               margin-top: 32px;
+               font-weight: 500;
+               font-size: 30px;
+               line-height: 35px;
+            }
+            .info__contact-text {
+
+               font-weight: 300;
+               font-size: 20px;
+               line-height: 23px;
+            }
+            .info__contact-mail {
+               margin-top: 32px;
+               font-weight: 500;
+               font-size: 24px;
+               line-height: 28px;
+            }
+         }
+      .info__colum{
+         margin-left: 0;
+         margin-top: 32px;
+         width: 310px;
+      .info__colum-title{
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 28px;
+      }
+         .info__colum-list {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+         }
+      }
+   
+      }
+   .under {
+      margin-top: 32px;
+      padding-bottom: 32px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      .under__info {
+         margin-right: 2%;
+      }
+      .under__link {
+         text-decoration: none;
+      }
+   }
+   }
+   }
+
+}
