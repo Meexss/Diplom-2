@@ -158,3 +158,40 @@
 
 
 }
+
+@media (max-width: 640px) {
+   .price{
+      margin-left: 0%;
+      margin-right: 0%;
+      max-width: $width-blok-two;
+      width: 100%;
+      .price__title {
+         margin-top: 49px;
+         font-size: 24px;
+      }
+      .price__bloks {
+         margin-bottom: 32px;
+         margin-top: 32px;
+         width: 100%;
+         flex-direction: column;
+         
+         .price__bloks-info{
+            height: 100%;
+            width: 320px;
+            margin: 0 auto;
+            margin-top: 32px;
+            &:first-child {
+               margin: 0 auto;
+            }
+
+      .price__more {
+         width: 80%;
+         margin-left: 5%;
+         font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+      }
+   }
+}
+}  
+}

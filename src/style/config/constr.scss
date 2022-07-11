@@ -182,3 +182,99 @@
          margin-bottom: 0;
       }
    }
+
+   @media (max-width: 640px) {
+      .constr {
+         margin-left: $margin-blok-two;
+         margin-right: $margin-blok-two;
+         max-width: $width-blok-two;
+         width: 96%;
+         margin-top: 10px;
+         .consr__info{
+            margin-left: $margin-blok-two;
+            margin-top: 20px;
+            width: 90%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+         }
+         .read-more-trigger {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+         }
+         .read-more-trigger:before {
+            margin-left: $margin-blok-one;
+         }
+         .read-more-state:checked ~ .consr__info .read-more-target {
+            font-size: 18px;
+         }
+         }
+         .constr__bloks{
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 32px;
+            margin-bottom: 47px;
+            
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__title {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 29px;
+            padding-left: 18px;
+            padding-right: 18px;
+            margin-left: 0;
+            text-align: center;
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__info {
+            width: 246px;
+            margin-left: 12%;
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__text {
+            width: 246px;
+            text-align: center;
+            margin-left: 12%;
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__list .constr__bloks-all__list-type {
+            margin-left: 18%;
+            width: 246px;
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__price {
+            margin-left: 12%;
+            width: 246px;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            text-align: center;
+         }
+         .one-blok-all {
+            order: 1;
+            height: 950px;
+         }
+         .two-blok-all {
+            order: 2;
+            height: 1051px;
+         }
+         .three-blok-all {
+            order: 3;
+            height: 1020px;
+         }
+         .constr__bloks .constr__bloks-all {
+            position: relative;
+            min-width: 320px;
+            margin: 0 auto;
+            margin-top: 24px;
+         }
+         .constr__bloks .constr__bloks-all .constr__bloks-all__btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+         }
+         .text-yellow-more{
+            display: block;
+         }
+
+   }

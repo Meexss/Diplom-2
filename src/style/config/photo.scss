@@ -16,8 +16,8 @@
    .photo__bloks{
      
       display: grid;
-      grid-template-columns: repeat(6, 14.4%);
-      grid-template-rows: repeat(2, 400%);
+      grid-template-columns: repeat(6, 256px);
+      grid-template-rows: repeat(2, 356px);
       gap: 40px;
       margin-top: 90px;
       .one{
@@ -50,6 +50,16 @@
          bottom: 15px;
          left: 42%;
    }
+   .photo__bloks-type{
+
+      .photo__bloks-type__img{
+         object-fit: cover;
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   
    }
 
    @media (max-width: 1280px) {
@@ -63,7 +73,7 @@
       height: 530px;
          position: relative;
          padding-bottom: 100px;
-         margin-bottom: 74px;
+         margin-bottom: 0px;
          .photo__title{
       
             margin-top: 66px;
@@ -76,6 +86,7 @@
      
             display: flex;
             margin-top: 32px;
+            justify-content: space-around;
             .photo__bloks-type {
                width: 320px;
                height: 280px;
@@ -84,10 +95,55 @@
       .photo__btn {
          width: 254px;
          height: 56px;
-         position: absolute;
-         bottom: 15px;
-         left: 42%;
+         margin: 0 auto;
+         margin-top: 30px;
+         position:static;
    }
+   }
+   .four {
+      display: none;
+   }
+   .five {
+      display: none;
+   }
+   .six {
+      display: none;
+   }
+   .stage-block {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+   }
+   .button-radio-photo {
+      border-radius: 50%;
+      background-color: grey;
+      width: 10px;
+      height: 10px;
+      margin-left: 15px;
+      &:first-child {
+         margin-left: 0;
+         background-color: black;
+      }
+   }
+   .button-next-photo {
+      position: absolute;
+      width: 30px;
+         height: 30px;
+         border-top: 3px solid #FFFFFF;
+         border-right: 3px solid #FFFFFF;
+      transform: rotate(40deg);
+      bottom: 300px;
+      right: 3%;
+   }
+   .button-prev-photo {
+      position: absolute;
+      width: 30px;
+         height: 30px;
+         border-top: 3px solid #FFFFFF;
+         border-right: 3px solid #FFFFFF;
+      transform: rotate(-140deg);
+      bottom: 300px;
+      left: 3%;
    }
 
    }
