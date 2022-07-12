@@ -25,6 +25,9 @@ header{
          
          .head__list-type {
             padding-left: 12px;
+            &:hover {
+               transform: scale(1.1);
+            }
          }
       }
       .head__info {
@@ -39,6 +42,10 @@ header{
          list-style: none;
          .head__tel_link{
             margin-bottom: 9px;
+            &:hover {
+               transform: scale(1.1);
+               text-shadow: 5px #000;
+            }
          }
          .head__tel-number {
             text-decoration:none;

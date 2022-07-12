@@ -30,6 +30,9 @@
          height: 550px;
          background-color: $color-seven;
          position: relative;
+         &:hover {
+            transform: scale(1.1);
+         }
          .variation__bloks-info__img {
             margin-top: 40px;
          }

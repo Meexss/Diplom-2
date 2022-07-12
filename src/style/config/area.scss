@@ -31,6 +31,10 @@
             font-size: 30px;
             line-height: 60px;
             font-family: $font-one;
+            &:hover {
+               transform: scale(1.1);
+               cursor: pointer;
+            }
          }
          
       }
