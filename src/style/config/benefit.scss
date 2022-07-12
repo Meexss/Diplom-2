@@ -292,3 +292,21 @@ line-height: 21px;
 
 
 }
+
+
+@media (max-width: 320px) {
+
+   .benefit .benefit__blok .benefit__blok-info .benefit__blok-info__photo {
+      left: 85px;
+      top: -85px;
+   }
+   .benefit .benefit__blok .benefit__blok-info__secondary {
+      
+   }
+   .benefit .benefit__blok .benefit__blok-info {
+      height: 390px;
+   }
+   .benefit .benefit__list-blok .benefit__list-blok__text {
+      margin-top: 32px;
+   }
+}

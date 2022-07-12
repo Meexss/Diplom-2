@@ -1,5 +1,8 @@
 @import "./config.scss";
-
+header{
+   position: relative;
+   overflow: hidden;
+}
 
    .head {
       margin: $margin-blok-all;
@@ -11,20 +14,9 @@
       justify-content: space-between;
       position: relative;
       flex-wrap: wrap;
-
-      //&:after {
-      //   content: "";
-      //   overflow:visible;
-      //   display: block;
-      //   position: absolute;
-      //   border-radius: 50%;
-      //   width: 1066px;
-      //   height: 1027px;
-      //   background-color: $color-seven;
-      //   z-index: -11;
-      //   right: -610px;
-      //   top:-252px;
-      //}
+      overflow-x: hidden;
+     
+      
       .head__logo {
          width: 308px;
          height: 106px;
@@ -69,6 +61,19 @@
       display: flex;
       justify-content: space-between;
       margin-top: 63px;
+
+      &:after {
+         content: "";
+         display: block;
+         position: absolute;
+         border-radius: 50%;
+         width: 1066px;
+         height: 1027px;
+         background-color: $color-seven;
+         z-index: -11;
+         right: -610px;
+         top:-252px;
+      }
       .midle__left {
          max-width: 871px;
          width: 100%;
@@ -207,6 +212,7 @@
       max-width: $width-blok-two;
       width: 96%;
       margin-top: 10px;
+
       .head__logo {
          order: 1;
       }
@@ -233,6 +239,9 @@
    max-width: $width-blok-two;
    width: 96%;
    margin-top: 0;
+   &:after {
+      display: none;
+   }
    .midle__left {
       margin-top: 46px;
       width: 41%;
@@ -275,6 +284,102 @@ margin-top: 5px;
 margin-left: 10px;
 }
 
+}
+
+@media (max-width: 320px) {
+   .head {
+      position: relative;
+   }
+
+   .head .head__logo {
+      order: 1;
+   }
+   .head .head__tel {
+      order: 4;
+      position: absolute;
+      bottom: -530px;
+      left: 40px;
+   }
+   .head .head__btn {
+      position: absolute;
+      order: 3;
+      bottom: -620px;
+      left: 23px;
+      width: 280px;
+      
+   }
+   .head .head__info {
+      margin-top: 6px;
+      order: 2;
+      width: 240px;
+      margin: 0 auto;
+   }
+   .head .head__list {
+      margin-top: 15px;
+      order: 5;
+      position: absolute;
+      bottom: -420px;
+      flex-direction: column;
+      left: 40px;
+      .head__list-type {
+         margin-top: 24px;
+         width: 39px;
+         height: 39px;
+         &:first-child {
+            margin-top: 0;
+         }
+      }
+   }
+
+   .midle {
+      margin-left: $margin-blok-two;
+      margin-right: $margin-blok-two;
+      max-width: $width-blok-two;
+      width: 96%;
+      margin-top: 0;
+      position: relative;
+      overflow: hidden;
+      .midle__left {
+         margin-top: 10px;
+         width: 280px;
+         margin-left: 24px;
+         .midle__left-title {
+            
+         }
+         .midle__left-blok {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-top: 480px;
+            margin-left: 20px;
+         }
+         .midle_left-blok-more{
+            margin-top: 10px;
+            width: 208px;
+            text-align: center;
+            
+         }
+         
+         .midle__left-blok__img {
+            margin-left: 68px;
+         }
+         .midle_left-btn {
+            margin-top: 44px;
+            width: 280px;
+            height: 67px;
+         }
+         
+      }
+      .midle__right-img {
+
+         position: absolute;
+         width: 219px;
+         height: 285px;
+         margin-left: 0;
+         top: 130px;
+         right: 0px;
+      }
+   }
 }
 
 

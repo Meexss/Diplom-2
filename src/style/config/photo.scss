@@ -14,13 +14,14 @@
       font-weight: 700;
    }
    .photo__bloks{
-     
+      width: 90%;
       display: grid;
       grid-template-columns: repeat(6, 256px);
       grid-template-rows: repeat(2, 356px);
       gap: 40px;
       margin-top: 90px;
       .one{
+         width: 100%;
          background-color: aqua;
          grid-column: 1 / span 2;
       }
@@ -62,12 +63,13 @@
    
    }
 
-   @media (max-width: 1280px) {
+
+   @media (max-width: 1440px) {
 
       .photo{
       margin-top: 55px;
-      margin-left: $margin-blok-two;
-      margin-right: $margin-blok-two;
+      //margin-left: $margin-blok-two;
+      //margin-right: $margin-blok-two;
       max-width: $width-blok-one ;
       width: 96%;
       height: 530px;
@@ -83,7 +85,7 @@
             line-height: 28px;
          }
          .photo__bloks{
-     
+            margin: 0 auto;
             display: flex;
             margin-top: 32px;
             justify-content: space-around;
@@ -147,4 +149,21 @@
    }
 
    }
+
+   @media (max-width: 640px) {
+      .two {
+         display: none;
+      }
+      .three {
+         display: none;
+      }
+      .photo{
+         margin-top: 55px;
+         margin-left: 0%;
+         margin-right: 0%;
+         max-width: $width-blok-two ;
+         width: 100%;
+
+   }
+}
    

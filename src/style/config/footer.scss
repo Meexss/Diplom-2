@@ -180,3 +180,36 @@ footer{
    }
 
 }
+
+@media (max-width: 640px) {
+   footer .footer__blok{
+      margin-left: 2%;
+margin-right: 2%;
+max-width: $width-blok-two ;
+width: 96%;
+.info{
+   margin: 0 auto;
+   .info__contact {
+      margin: 0 auto;
+      margin-top: 32px;
+   }
+   .info__colum {
+      margin: 0 auto;
+      margin-top: 32px;
+   }
+}
+
+
+   }
+
+   footer .footer__blok .under {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .under__link {
+      margin-left: 0;
+      margin-top: 32px;
+      width: 100%;
+   }
+   }
+}
