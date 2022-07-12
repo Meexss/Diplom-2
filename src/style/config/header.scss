@@ -14,8 +14,6 @@ header{
       justify-content: space-between;
       position: relative;
       flex-wrap: wrap;
-      overflow-x: hidden;
-     
       
       .head__logo {
          width: 308px;
@@ -371,13 +369,13 @@ margin-left: 10px;
          
       }
       .midle__right-img {
-
          position: absolute;
          width: 219px;
          height: 285px;
          margin-left: 0;
          top: 130px;
          right: 0px;
+         z-index: -10;
       }
    }
 }
